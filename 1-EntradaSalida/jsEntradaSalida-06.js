@@ -4,6 +4,19 @@ transformarlos a enteros (parseInt) y Sumarlos.
 mostrar el resulto por medio de "ALERT"*/
 function sumar()
 {
-	alert("ok");
-}
+//definimos las variables
+let num1;
+let num2;
+let suma;
+let mensaje;
 
+num1 = parseInt(document.getElementById("txtIdNumeroUno").value);
+
+num2 = parseInt(document.getElementById("txtIdNumeroDos").value);
+
+suma = num1 + num2;
+
+mensaje = "El resultado es" + suma;
+//mostramos resultado
+	alert(mensaje);
+}
