@@ -13,10 +13,10 @@ let aumento;
 // el calculo de porcentaje de un valor lo consigo multiplicando el valor por el porcentaje y lo divido por cien
 sueldo = parseFloat(document.getElementById("txtIdSueldo").value);
 
-aumento = sueldo * 10 / 100;
+aumento = prompt("Ingrese el porcentaje de aumento");
+aumento = parseInt(aumento);
 
-nuevosueldo = sueldo + aumento;
+nuevosueldo = sueldo + sueldo * aumento / 100;
 
 document.getElementById("txtIdResultado").value = nuevosueldo;
-
 }

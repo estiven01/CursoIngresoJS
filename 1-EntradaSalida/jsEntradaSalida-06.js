@@ -8,7 +8,6 @@ function sumar()
 let num1;
 let num2;
 let suma;
-let mensaje;
 
 num1 = parseInt(document.getElementById("txtIdNumeroUno").value);
 
@@ -16,7 +15,6 @@ num2 = parseInt(document.getElementById("txtIdNumeroDos").value);
 
 suma = num1 + num2;
 
-mensaje = "El resultado es" + suma;
-//mostramos resultado
-	alert(mensaje);
+alert("El resultado es " + suma);
+
 }

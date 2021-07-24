@@ -11,11 +11,10 @@ function mostrarAumento()
 
 	importe = parseFloat(document.getElementById("txtIdImporte").value);
 
-	descuento = importe *25 / 100;
+    descuento = prompt("Ingrese el porcentaje de descuento");
+    descuento = parseInt(descuento);
 
-	nuevoImporte = descuento - importe;
+	nuevoImporte = importe - importe * descuento / 100 ;
 
 	document.getElementById("txtIdResultado").value = nuevoImporte;
-
-
 }
