@@ -1,8 +1,22 @@
 function mostrar()
 {
-	//tomo la edad  
-	alert("ok");
+	let edad;
 
+	edad = parseInt(document.getElementById("txtIdEdad").value);
 
+	if ( edad < 13) {
+            alert("Es niño");
+	} 
 
-}//FIN DE LA FUNCIÓN
+    else if (edad < 18) {
+            alert("Es adolescente");
+        }
+    
+    else if (edad < 65) {
+            alert("Es adulto");
+        }
+
+    else {
+    	alert("Es anciano")
+    }
+}
